@@ -1,0 +1,32 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.covidDonationsMonitor.controller.Popover2" xmlns="sap.m">
+    <ResponsivePopover contentHeight="350px" contentWidth="250px" horizontalScrolling="true" modal="false" offsetX="0" offsetY="0" placement="Bottom" showHeader="true" title="Frontline Beneficiaries" verticalScrolling="true" visible="true" showCloseButton="true">
+        <content>
+            <List mode="SingleSelectMaster" width="100%" headerText="Header" footerText="" backgroundDesign="Translucent" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" visible="true">
+                <infoToolbar>
+                    <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                        <content>
+                            <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                        </content>
+                    </Toolbar>
+                </infoToolbar>
+                <headerToolbar>
+                    <Toolbar enabled="true" visible="true" width="" design="Solid">
+                        <content>
+                            <SearchField placeholder="Search" showSearchButton="true" visible="true" width="100%"/>
+                        </content>
+                    </Toolbar>
+                </headerToolbar>
+                <items>
+                    <StandardListItem icon="sap-icon://message-success" title="Infectious Disease Center" description="Lagos State" info="Info 1" infoState="Success" type="Active" selected="false" visible="true"/>
+                    <StandardListItem icon="sap-icon://message-success" title="University of Abuja Teaching Hospital, Gwagwalada" description="FCT" info="Info 2" infoState="Success" type="Active" selected="false" visible="true"/>
+                    <StandardListItem icon="sap-icon://message-success" title="Federal Medical Center" description="Abeokuta" info="Info 3" infoState="Success" type="Active" selected="false" visible="true"/>
+                    <StandardListItem icon="sap-icon://message-success" title="African Centre of Excellence for the Genomics of Infectious Disease" description="Ede" info="Info" infoState="None" type="Active" selected="false" visible="true"/>
+                </items>
+            </List>
+        </content>
+        <beginButton/>
+        <customHeader/>
+        <endButton/>
+        <subHeader/>
+    </ResponsivePopover>
+</core:FragmentDefinition>

@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.covidDonationsMonitor.controller.QuickView1" xmlns="sap.m">
+    <QuickView placement="Auto" width="320px">
+        <pages>
+            <QuickViewPage header="Header" title="Title" titleUrl="" description="Description">
+                <groups>
+                    <QuickViewGroup visible="true" heading="Heading">
+                        <elements>
+                            <QuickViewGroupElement label="Label" value="Value" type="text" emailSubject="" pageLinkId="" url="" target="_blank" visible="true"/>
+                        </elements>
+                    </QuickViewGroup>
+                </groups>
+            </QuickViewPage>
+        </pages>
+    </QuickView>
+</core:FragmentDefinition>

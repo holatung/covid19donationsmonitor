@@ -1,0 +1,278 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.covidDonationsMonitor.controller.Page2" xmlns:uxap="sap.uxap" xmlns="sap.m" xmlns:layout="sap.ui.layout">
+    <uxap:ObjectPageLayout showTitleInHeaderContent="false" showHeaderContent="true" showEditHeaderButton="false" showFooter="false" class="sapUiSizeCompact">
+        <uxap:headerTitle>
+            <uxap:ObjectPageHeader objectTitle="COVID19:" objectSubtitle="Search widgets using keywords that give you an overview of the reports on donations." isObjectIconAlwaysVisible="false" isObjectTitleAlwaysVisible="true" isObjectSubtitleAlwaysVisible="true" showPlaceholder="true" objectImageURI="/webapp/resources/coronavirus-image2_1_.png">
+                <uxap:navigationBar>
+                    <Bar>
+                        <contentLeft>
+                            <Button type="Back" press="_onFioriObjectPageHeaderPress"/>
+                        </contentLeft>
+                        <contentMiddle>
+                            <Title text="Report Dashboard"/>
+                        </contentMiddle>
+                        <contentRight/>
+                    </Bar>
+                </uxap:navigationBar>
+                <uxap:actions>
+                    <Button text="Edit" iconFirst="false" type="Emphasized" enabled="true">
+                        <layoutData>
+                            <OverflowToolbarLayoutData moveToOverflow="true"/>
+                        </layoutData>
+                    </Button>
+                    <Button text="Delete" iconFirst="false" type="Transparent" enabled="true">
+                        <layoutData>
+                            <OverflowToolbarLayoutData moveToOverflow="true"/>
+                        </layoutData>
+                    </Button>
+                    <Button text="" icon="sap-icon://action" iconFirst="true" type="Transparent" enabled="true">
+                        <layoutData>
+                            <OverflowToolbarLayoutData moveToOverflow="true"/>
+                        </layoutData>
+                    </Button>
+                </uxap:actions>
+                <uxap:breadCrumbsLinks/>
+            </uxap:ObjectPageHeader>
+        </uxap:headerTitle>
+        <uxap:headerContent>
+            <VBox>
+                <items>
+                    <Image src="/webapp/resources/coronavirus-image2_1_.png" class="sapUxAPObjectPageHeaderObjectImage sapSmartTemplatesObjectPageHeaderImage" width="6rem" height="6rem" visible="true"/>
+                </items>
+            </VBox>
+            <SearchField placeholder="Search" showSearchButton="true" visible="true" width="auto"/>
+        </uxap:headerContent>
+        <uxap:sections>
+            <uxap:ObjectPageSection title="First Section">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="First Section">
+                        <uxap:blocks>
+                            <layout:BlockLayout background="Mixed" visible="true" class="sapUiResponsiveContentPadding">
+                                <layout:content>
+                                    <layout:BlockLayoutRow scrollable="false">
+                                        <layout:content>
+                                            <layout:BlockLayoutCell width="1" title="NCDC announces donation of ambulances by IHS Towers Nigeria towards fight against COVID-19" titleAlignment="Begin" titleLevel="Auto">
+                                                <layout:content>
+                                                    <Text text="May 1, 2020" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <Image src="/webapp/resources/image0-3.png" height="263.13000000px" width="325.96701489px" visible="true" densityAware="false"/>
+                                                </layout:content>
+                                            </layout:BlockLayoutCell>
+                                            <layout:BlockLayoutCell width="1" title="The Nigeria Centre for Disease Control (NCDC) through its official twitter handle announced the support of IHS Nigeria, the largest subsidiary of IHS Towers, towards the eradication of COVID-19 in Nigeria through the provision of four ambulances which will be deployed to four states across the country.  According to the agency, the ambulances donated will be used to support the NCDC state level activities in Kano, Oyo, Edo states and the FCT Emergency Operations Centres to expand the current capacity for transportation of cases." titleAlignment="Begin" titleLevel="Auto">
+                                                <layout:content/>
+                                            </layout:BlockLayoutCell>
+                                        </layout:content>
+                                    </layout:BlockLayoutRow>
+                                    <layout:BlockLayoutRow scrollable="false">
+                                        <layout:content>
+                                            <layout:BlockLayoutCell width="1" title="Coronavirus: Obasanjo donates residence for Ogun govt as isolation centre" titleAlignment="Begin" titleLevel="Auto">
+                                                <layout:content>
+                                                    <Text text="March 27, 2020" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <Image src="/webapp/resources/ObJ.jpg" height="195px" width="259px" visible="true" densityAware="false"/>
+                                                </layout:content>
+                                            </layout:BlockLayoutCell>
+                                            <layout:BlockLayoutCell width="1" title="As part of preparation ahead of possible cases of more patients of Coronavirus in Ogun state, former President Olusegun Obasanjo on Friday donated his former residence where he was residing before he later relocated to the present abode – the Penthouse on the Olusegun Obasanjo Presidential Library (OOPL) – to Ogun state government as Isolation Centre.  BusinessDay reports that the 32-room residence of Obasanjo had earlier been converted to a hotel – an extension of Legacy Resorts headquartered at the Olusegun Obasanjo Presidential Library (OOPL) before it was donated to Ogun state government on Friday as Isolation Centre. The hotel facility which is located off the popular Presidential Boulevard at Oke Sari in Abeokuta, has each of the 32 rooms and all ensuite, with a standby generator for which clinical and medical equipment is expected to be installed within the facility by Ogun state government." titleAlignment="Begin" titleLevel="Auto">
+                                                <layout:content/>
+                                            </layout:BlockLayoutCell>
+                                            <layout:BlockLayoutCell width="2" title="Comments" titleAlignment="Center" titleLevel="Auto">
+                                                <layout:content>
+                                                    <FeedInput showIcon="true" icon="" placeholder="Post something here" enabled="true" visible="true" maxLength="0" buttonTooltip="Submit"/>
+                                                </layout:content>
+                                            </layout:BlockLayoutCell>
+                                        </layout:content>
+                                    </layout:BlockLayoutRow>
+                                </layout:content>
+                            </layout:BlockLayout>
+                            <layout:BlockLayout background="Default" visible="true">
+                                <layout:content>
+                                    <layout:BlockLayoutRow scrollable="false">
+                                        <layout:content>
+                                            <layout:BlockLayoutCell width="1" title="Covid-19: Dangote Foundation gifts 4 ambulances to NCDC" titleAlignment="Begin" titleLevel="Auto">
+                                                <layout:content>
+                                                    <Text text="March 28, 2020" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </layout:content>
+                                            </layout:BlockLayoutCell>
+                                        </layout:content>
+                                    </layout:BlockLayoutRow>
+                                    <layout:BlockLayoutRow scrollable="false">
+                                        <layout:content>
+                                            <layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+                                                <layout:content>
+                                                    <layout:BlockLayoutCell width="1" title="The Nigeria Centre for Disease Control (NCDC) says it has received four ambulances donated by the Aliko Dangote Foundation to support its response to the coronavirus pandemic in Lagos state. It announced its receipt of the vehicles in a tweet that pictured four buses. It also expressed gratitude for “collective efforts” by both government and private in response to the pandemic. Mobile phone on MTN users on Saturday woke up to 100MB of free data to browse the websites of the federal health ministry, NCDC and WHO for information, according to the provider." titleAlignment="Begin" titleLevel="Auto">
+                                                        <layout:content>
+                                                            <Image src="/webapp/resources/dangote.jpg" height="216.23000000px" width="287.41683193px" visible="true" densityAware="false"/>
+                                                            <Text text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </layout:content>
+                                                    </layout:BlockLayoutCell>
+                                                </layout:content>
+                                            </layout:BlockLayoutCell>
+                                        </layout:content>
+                                    </layout:BlockLayoutRow>
+                                </layout:content>
+                            </layout:BlockLayout>
+                            <layout:BlockLayout background="Default" visible="true">
+                                <layout:content>
+                                    <layout:BlockLayoutRow scrollable="false">
+                                        <layout:content>
+                                            <layout:BlockLayoutCell width="1" title="COVID19: GIGM Donates Buses to NCDC" titleAlignment="Begin" titleLevel="Auto">
+                                                <layout:content>
+                                                    <Text text="March 25, 2020" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <Image src="/webapp/resources/GIGM_tweet.png" height="189.61000000px" width="259.72619855px" visible="true" densityAware="false"/>
+                                                </layout:content>
+                                            </layout:BlockLayoutCell>
+                                        </layout:content>
+                                    </layout:BlockLayoutRow>
+                                    <layout:BlockLayoutRow scrollable="false">
+                                        <layout:content>
+                                            <layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+                                                <layout:content>
+                                                    <layout:BlockLayoutCell width="1" title="A leading transport company in Nigeria, GIGMobilty is offering to play a big role in the nation’s fight against the spread of the novel coronavirus which is ravaging the globe.  The company Wednesday revealed that it was willing to donate some buses to aid staff of the Nigeria Centre for Disease Control (NCDC) in their day-to-day activities during the trying period." titleAlignment="Begin" titleLevel="Auto">
+                                                        <layout:content>
+                                                            <Text text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </layout:content>
+                                                    </layout:BlockLayoutCell>
+                                                </layout:content>
+                                            </layout:BlockLayoutCell>
+                                        </layout:content>
+                                    </layout:BlockLayoutRow>
+                                </layout:content>
+                            </layout:BlockLayout>
+                            <layout:BlockLayout background="Default" visible="true">
+                                <layout:content>
+                                    <layout:BlockLayoutRow scrollable="false">
+                                        <layout:content>
+                                            <layout:BlockLayoutCell width="1" title="COVID19: GIGM Donates Buses to NCDC" titleAlignment="Begin" titleLevel="Auto">
+                                                <layout:content>
+                                                    <Text text="March 25, 2020" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                    <Image src="/webapp/resources/GIGM_tweet.png" height="189.61000000px" width="259.72619855px" visible="true" densityAware="false"/>
+                                                </layout:content>
+                                            </layout:BlockLayoutCell>
+                                        </layout:content>
+                                    </layout:BlockLayoutRow>
+                                    <layout:BlockLayoutRow scrollable="false">
+                                        <layout:content>
+                                            <layout:BlockLayoutCell width="2" title="" titleAlignment="Begin" titleLevel="Auto">
+                                                <layout:content>
+                                                    <layout:BlockLayoutCell width="1" title="A leading transport company in Nigeria, GIGMobilty is offering to play a big role in the nation’s fight against the spread of the novel coronavirus which is ravaging the globe.  The company Wednesday revealed that it was willing to donate some buses to aid staff of the Nigeria Centre for Disease Control (NCDC) in their day-to-day activities during the trying period." titleAlignment="Begin" titleLevel="Auto">
+                                                        <layout:content>
+                                                            <Text text="" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                        </layout:content>
+                                                    </layout:BlockLayoutCell>
+                                                </layout:content>
+                                            </layout:BlockLayoutCell>
+                                        </layout:content>
+                                    </layout:BlockLayoutRow>
+                                </layout:content>
+                            </layout:BlockLayout>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection title="Second Section">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="Second Section">
+                        <uxap:blocks>
+                            <Table width="100%" growing="true" growingScrollToLoad="true" growingThreshold="25" mode="None">
+                                <headerToolbar>
+                                    <OverflowToolbar design="Transparent">
+                                        <content>
+                                            <ToolbarSpacer/>
+                                            <Button icon="sap-icon://action-settings" type="Transparent">
+                                                <layoutData>
+                                                    <OverflowToolbarLayoutData moveToOverflow="true"/>
+                                                </layoutData>
+                                            </Button>
+                                        </content>
+                                    </OverflowToolbar>
+                                </headerToolbar>
+                                <columns>
+                                    <Column width="auto" minScreenWidth="Phone">
+                                        <header>
+                                            <Text text="Column 1" width="auto"/>
+                                        </header>
+                                    </Column>
+                                    <Column width="auto" minScreenWidth="Tablet" demandPopin="true">
+                                        <header>
+                                            <Text text="Column 2" width="auto"/>
+                                        </header>
+                                    </Column>
+                                    <Column width="auto" hAlign="Right" minScreenWidth="Phone">
+                                        <header>
+                                            <Text text="Column 3" width="auto"/>
+                                        </header>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem type="Active">
+                                        <cells>
+                                            <ObjectIdentifier title="Description" text="Code"/>
+                                            <ObjectStatus text="Column 2 value"/>
+                                            <HBox alignItems="Stretch" justifyContent="End" alignContent="Stretch">
+                                                <items>
+                                                    <ObjectNumber number="150.00" unit="USD" emphasized="false"/>
+                                                </items>
+                                            </HBox>
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection title="Third Section">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="Third Section">
+                        <uxap:blocks>
+                            <layout:BlockLayout background="Default" visible="true">
+                                <layout:content>
+                                    <layout:BlockLayoutRow scrollable="false">
+                                        <layout:content>
+                                            <layout:BlockLayoutCell width="1" title="Jumia" titleAlignment="Begin" titleLevel="Auto">
+                                                <layout:content>
+                                                    <Text text="Some text" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </layout:content>
+                                            </layout:BlockLayoutCell>
+                                            <layout:BlockLayoutCell width="1" title="1/4 width cell" titleAlignment="Begin" titleLevel="Auto">
+                                                <layout:content>
+                                                    <Text text="More text" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </layout:content>
+                                            </layout:BlockLayoutCell>
+                                            <layout:BlockLayoutCell width="2" title="End aligned heading" titleAlignment="End" titleLevel="Auto">
+                                                <layout:content>
+                                                    <Text text="More text" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </layout:content>
+                                            </layout:BlockLayoutCell>
+                                        </layout:content>
+                                    </layout:BlockLayoutRow>
+                                    <layout:BlockLayoutRow scrollable="false">
+                                        <layout:content>
+                                            <layout:BlockLayoutCell width="2" title="50% width cell" titleAlignment="Begin" titleLevel="Auto">
+                                                <layout:content>
+                                                    <Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr." width="auto" maxLines="20" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </layout:content>
+                                            </layout:BlockLayoutCell>
+                                            <layout:BlockLayoutCell width="2" title="50% width cell" titleAlignment="Begin" titleLevel="Auto">
+                                                <layout:content>
+                                                    <FeedInput showIcon="true" icon="" placeholder="Post something here" enabled="true" visible="true" maxLength="0" buttonTooltip="Submit"/>
+                                                    <FeedInput showIcon="true" icon="" placeholder="Post something here" enabled="true" visible="true" maxLength="0" buttonTooltip="Submit"/>
+                                                </layout:content>
+                                            </layout:BlockLayoutCell>
+                                        </layout:content>
+                                    </layout:BlockLayoutRow>
+                                </layout:content>
+                            </layout:BlockLayout>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+        </uxap:sections>
+        <uxap:footer>
+            <OverflowToolbar design="auto">
+                <content>
+                    <ToolbarSpacer/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </uxap:footer>
+    </uxap:ObjectPageLayout>
+</mvc:View>

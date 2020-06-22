@@ -1,0 +1,175 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.covidDonationsMonitor.controller.Page4" xmlns:uxap="sap.uxap" xmlns="sap.m" xmlns:chart="sap.chart" xmlns:data="sap.chart.data" xmlns:layout="sap.ui.layout" xmlns:core="sap.ui.core">
+    <uxap:ObjectPageLayout showTitleInHeaderContent="false" showHeaderContent="true" showEditHeaderButton="false" showFooter="false" class="sapUiSizeCompact">
+        <uxap:headerTitle>
+            <uxap:ObjectPageHeader objectTitle="RECIPIENTS OF DONATIONS" objectSubtitle="" isObjectIconAlwaysVisible="false" isObjectTitleAlwaysVisible="true" isObjectSubtitleAlwaysVisible="true" showPlaceholder="true" objectImageURI="/build/uilibraries/content/static/image-canvas.svg">
+                <uxap:navigationBar>
+                    <Bar>
+                        <contentLeft>
+                            <Button type="Back" press="_onFioriObjectPageHeaderPress"/>
+                        </contentLeft>
+                        <contentMiddle>
+                            <Title text="BENEFICIARIES TRACING DASHBOARD"/>
+                        </contentMiddle>
+                        <contentRight/>
+                    </Bar>
+                </uxap:navigationBar>
+                <uxap:actions>
+                    <Button text="Edit" iconFirst="false" type="Emphasized" enabled="true">
+                        <layoutData>
+                            <OverflowToolbarLayoutData moveToOverflow="true"/>
+                        </layoutData>
+                    </Button>
+                    <Button text="Delete" iconFirst="false" type="Transparent" enabled="true">
+                        <layoutData>
+                            <OverflowToolbarLayoutData moveToOverflow="true"/>
+                        </layoutData>
+                    </Button>
+                    <Button text="" icon="sap-icon://action" iconFirst="true" type="Transparent" enabled="true">
+                        <layoutData>
+                            <OverflowToolbarLayoutData moveToOverflow="true"/>
+                        </layoutData>
+                    </Button>
+                </uxap:actions>
+                <uxap:breadCrumbsLinks/>
+            </uxap:ObjectPageHeader>
+        </uxap:headerTitle>
+        <uxap:headerContent>
+            <chart:Chart id="Fiori_ObjectPage_ObjectPage_0-headers-Fiori_ObjectPage_Header-1-kPIs-sap_chart_DonutChart-1592698918813" width="1181.15625px" height="397.609375px" visibleDimensions="__id" visibleMeasures="mea0" vizProperties="{staticDataModel>/Fiori_ObjectPage_ObjectPage_0-headers-Fiori_ObjectPage_Header-1-kPIs-sap_chart_DonutChart-1592698918813/vizProperties}" chartType="donut" selectionMode="Single" uiConfig="{}" selectData="_onDonutChartSelectData">
+                <chart:dimensions>
+                    <data:Dimension name="__id" label="RECIPIENT" role="category" textProperty="dim0"/>
+                </chart:dimensions>
+                <chart:measures>
+                    <data:Measure name="mea0" label="AMOUNT" role="axis2"/>
+                </chart:measures>
+            </chart:Chart>
+        </uxap:headerContent>
+        <uxap:sections>
+            <uxap:ObjectPageSection title="BENEFICIARIES BY STATES">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="BENEFICIARIES BY STATES">
+                        <uxap:blocks>
+                            <chart:Chart id="Fiori_ObjectPage_ObjectPage_0-sections-Fiori_ObjectPage_Section-1-sectionContent-sap_chart_StackedBarChart-1592694567792" width="1205.61000000px" height="721.23000000px" visibleDimensions="__id" visibleMeasures="mea0,mea1" vizProperties="{staticDataModel>/Fiori_ObjectPage_ObjectPage_0-sections-Fiori_ObjectPage_Section-1-sectionContent-sap_chart_StackedBarChart-1592694567792/vizProperties}" chartType="stacked_bar" selectionMode="Single" uiConfig="{}">
+                                <chart:dimensions>
+                                    <data:Dimension name="__id" label="STATES" role="category" textProperty="dim0"/>
+                                </chart:dimensions>
+                                <chart:measures>
+                                    <data:Measure name="mea0" label="INDIVIDUALS" role="axis1"/>
+                                    <data:Measure name="mea1" label="HOUSEHOLDS" role="axis2"/>
+                                </chart:measures>
+                            </chart:Chart>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection title="">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="">
+                        <uxap:blocks>
+                            <Table width="100%" growing="true" growingScrollToLoad="true" growingThreshold="25" mode="None">
+                                <headerToolbar>
+                                    <OverflowToolbar design="Transparent">
+                                        <content>
+                                            <ToolbarSpacer/>
+                                            <Button icon="sap-icon://action-settings" type="Transparent">
+                                                <layoutData>
+                                                    <OverflowToolbarLayoutData moveToOverflow="true"/>
+                                                </layoutData>
+                                            </Button>
+                                        </content>
+                                    </OverflowToolbar>
+                                </headerToolbar>
+                                <columns>
+                                    <Column width="auto" minScreenWidth="Phone">
+                                        <header>
+                                            <Text text="Column 1" width="auto"/>
+                                        </header>
+                                    </Column>
+                                    <Column width="auto" minScreenWidth="Tablet" demandPopin="true">
+                                        <header>
+                                            <Text text="Column 2" width="auto"/>
+                                        </header>
+                                    </Column>
+                                    <Column width="auto" hAlign="Right" minScreenWidth="Phone">
+                                        <header>
+                                            <Text text="Column 3" width="auto"/>
+                                        </header>
+                                    </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem type="Active">
+                                        <cells>
+                                            <ObjectIdentifier title="Description" text="Code"/>
+                                            <ObjectStatus text="Column 2 value"/>
+                                            <HBox alignItems="Stretch" justifyContent="End" alignContent="Stretch">
+                                                <items>
+                                                    <ObjectNumber number="150.00" unit="USD" emphasized="false"/>
+                                                </items>
+                                            </HBox>
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                            </Table>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+            <uxap:ObjectPageSection title="">
+                <uxap:subSections>
+                    <uxap:ObjectPageSubSection title="">
+                        <uxap:blocks>
+                            <layout:Grid defaultSpan="XL3 L4 M6 S12" class="sapUiSmallMarginTop">
+                                <layout:content>
+                                    <CustomListItem border="0" float="left" width="24rem" padding="0">
+                                        <content>
+                                            <HBox>
+                                                <items>
+                                                    <core:Icon size="2rem" src="sap-icon://person-placeholder" alt=" " class="sapUiSmallMarginTopBottom" line-height="3rem" margin-right=".75rem" font-size="2.25rem" font-weight="normal" width="3rem" height="3rem"/>
+                                                    <VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom">
+                                                        <items>
+                                                            <Link text="Sally Spring" font-size="1rem" margin-top="0.1rem" press="_onFioriObjectPageContactListPress">
+                                                                <dependents>
+                                                                    <QuickView placement="Auto">
+                                                                        <pages>
+                                                                            <QuickViewPage header="Contact Information" icon="sap-icon://person-placeholder" title="Sally Spring" description="Research &amp; Development">
+                                                                                <groups>
+                                                                                    <QuickViewGroup heading="Contact Details">
+                                                                                        <elements>
+                                                                                            <QuickViewGroupElement label="Job Title" type="text" value="Designer" visible="true"/>
+                                                                                            <QuickViewGroupElement label="Department" type="text" value="ITelo" visible="true"/>
+                                                                                            <QuickViewGroupElement label="Email" type="email" value="sally.spring@itelo.info" visible="true"/>
+                                                                                            <QuickViewGroupElement label="Phone" type="phone" value="+1 224 374524" visible="true"/>
+                                                                                            <QuickViewGroupElement label="Mobile" type="mobile" value="+1 224 9211250" visible="true"/>
+                                                                                            <QuickViewGroupElement label="Fax" type="text" value="+1 224 374524" visible="true"/>
+                                                                                        </elements>
+                                                                                    </QuickViewGroup>
+                                                                                </groups>
+                                                                            </QuickViewPage>
+                                                                        </pages>
+                                                                    </QuickView>
+                                                                </dependents>
+                                                            </Link>
+                                                            <Text text="Research &amp; Development" margin-top="0.3rem"/>
+                                                        </items>
+                                                    </VBox>
+                                                </items>
+                                            </HBox>
+                                        </content>
+                                    </CustomListItem>
+                                </layout:content>
+                            </layout:Grid>
+                        </uxap:blocks>
+                    </uxap:ObjectPageSubSection>
+                </uxap:subSections>
+            </uxap:ObjectPageSection>
+        </uxap:sections>
+        <uxap:footer>
+            <OverflowToolbar design="auto">
+                <content>
+                    <ToolbarSpacer/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </uxap:footer>
+    </uxap:ObjectPageLayout>
+</mvc:View>

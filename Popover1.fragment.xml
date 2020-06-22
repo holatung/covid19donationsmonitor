@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" controllerName="com.sap.build.standard.covidDonationsMonitor.controller.Popover1" xmlns="sap.m">
+    <ResponsivePopover contentHeight="350px" contentWidth="250px" horizontalScrolling="true" modal="false" offsetX="0" offsetY="0" placement="Top" showHeader="true" title="Jack Ma's coronavirus testing kits reach Nigeria" verticalScrolling="true" visible="true" showCloseButton="true">
+        <content>
+            <NewsContent contentText="Nigeria on Wednesday received test kits and protective gear from China's richest man, Jack Ma, to help fight novel coronavirus, which has so far claimed one life and infected 45 others in Africa's most populous nation.  Nigeria's top health official, Abdulaziz Abdullahi, told AFP that the country had received 100,000 face masks, 1,000 protective gowns and 20,000 test kits.  The equipment will be distributed to frontline health workers and hospital laboratories, he said." subheader="" class="sapUiLargeMargin"/>
+        </content>
+        <beginButton/>
+        <customHeader/>
+        <endButton/>
+        <subHeader/>
+    </ResponsivePopover>
+</core:FragmentDefinition>
